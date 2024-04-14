@@ -18,7 +18,7 @@
 		"test": "jest",
 		"test:watch": "jest --watch",
 		"storybook": "yarn test:generate-output && storybook dev -p 6006",
-		"build-storybook": "storybook build",
+		"build-storybook": "yarn test:generate-output && storybook build",
 		"test:generate-output": "jest --json --outputFile=.jest-test-results.json || true",
 		"test:generate-output-watch": "jest --watch --json --outputFile=.jest-test-results.json || true",
 		"build:lib": "rm -rf dist && tsc --project tsconfig.lib.json && vite build --config vite.config.lib.ts"

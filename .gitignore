@@ -24,3 +24,5 @@ dist-ssr
 *.sw?
 
 .jest-test-results.json
+
+storybook-static
